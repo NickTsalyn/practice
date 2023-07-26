@@ -1,16 +1,2 @@
-const images = document.querySelectorAll('.thumbnail')
-  const mainImg = document.querySelector('#mainImage')
-
-  images.forEach(img => {
-    img.addEventListener('click', onClick)
-
-    function onClick(evt) {
-      const src = img.getAttribute('src')
-      mainImg.setAttribute('src', src)
-
-      images.forEach(photo => {
-        photo.classList.remove('selected')
-      })
-      img.classList.add('selected')
-    }
-  })
+// Створіть просту галерею зображень. У вас є набір мініатюр зображень. Коли користувач клікає на мініатюру, велике зображення має змінитися на відповідне до мініатюри.
+// Додайте клас selected до натиснутого елементу, щоб виділити мініатюру, а також видаліть клас selected з попередньо виділеного елементу.

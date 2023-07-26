@@ -1,10 +1,2 @@
-const button = document.querySelector('#myButton');
-const list = document.querySelector('#myList');
-let counter = 1;
-
-button.addEventListener('click', () => {
-  const newItem = document.createElement('li');
-  newItem.textContent = new Date().toLocaleTimeString();
-  list.appendChild(newItem);
-  counter + 1;
-});
+// Задачка:
+// Створіть список елементів, наприклад, <ul id="myList"></ul>. Додайте кнопку, яка буде додавати новий елемент до списку кожного разу, коли на неї натискають. Кожен новий елемент повинен мати унікальний текст, який складається з поточного часу.
